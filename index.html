@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubizzle</title>
+
+    <!-- Bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fontawsome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <section>
+        <header class="container-fluid">
+            <!-- For Desktop -->
+            <nav class="d-lg-block d-none">
+                <div class="wrapper">
+                    <div class="row justify-content-between align-items-center py-2">
+                        <div class="w-mxc logo">
+                            <img src="https://motarey.com/wp-content/uploads/2023/08/mobile-logo.png" alt="image">
+                        </div>
+                        <div class="w-mxc d-flex align-items-center gap-3">
+                            <button class="btn-theme d-flex align-items-center gap-2"><i
+                                    class="fa fa-user-circle fa-lg"></i> Login</button>
+                            <button class="btn-theme">Post Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-3 border-top border-bottom">
+                    <div class="wrapper">
+                        <ul class="category-items">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Motors</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Property for Rent</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Property for Sale</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Jobs</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Classifieds</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Furniture & Garden</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Mobiles & Tablets</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Community</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="py-4 d-lg-none d-block">
+                <img src="https://motarey.com/wp-content/uploads/2023/08/mobile-logo.png" class="logo" alt="image">
+            </nav>
+        </header>
+
+        <!-- For Mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/home.svg" alt="image">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/search.svg" alt="image">
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/add.svg" alt="image">
+                        <span>Post an Add</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/home.svg" alt="image">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/images/user.svg" alt="image">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- Banner Start -->
+    <section>
+        <div class="wrapper">
+            <!-- For Desktop -->
+            <div class="home-banner my-4 d-lg-block d-none">
+                <img src="https://dbzstatic-a.akamaihd.net/dist_9c46920/images/vertical_homepages/motors_bg/Image27.png"
+                    class="banner-img" alt="">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="text-center banner-title text-white">The UAE's leading marketplace to buy and sell cars
+                    </h1>
+                    <div class="d-flex  gap-3 mt-3">
+                        <div class="banner-search">
+                            <input type="text" placeholder="Enter Keyswords">
+                            <div class="text-white px-3 cursor">
+                                <i class="fa fa-search fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Mobile -->
+            <div class="d-lg-none d-flex">
+                <div class="mobile-search mb-4">
+                    <input type="text">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Cards Start -->
+    <section>
+        <div class="wrapper">
+            <div class="row cards-row mx-0">
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-car"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                Cars
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(200)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-hashtag"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                Number Plates
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(200)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-motorcycle"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                Motorcycles
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(100)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-boxes-stacked"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                AUTO ACCESSORIES & PARTS
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(200)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-ship"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                BOATS
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(200)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="card-box text-center">
+                        <div>
+                            <i class="fa fa-3x fa-truck"></i>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h6 class="d-flex mt-lg-4 mt-2 align-items-center gap-2 text-uppercase">
+                                HEAVY VEHICLES
+                            </h6>
+                        </div>
+                        <div>
+                            <h6>(200)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cards End -->
+
+    <!-- Product Listing Start -->
+    <section>
+        <div class="wrapper py-5">
+            <div class="row">
+                <h3 class="mb-4">Listings</h3>
+            </div>
+            <div class="row product-listing">
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="https://motarey.com/wp-content/uploads/2021/12/listing9-621x396.jpg" alt="image">
+                    </div>
+                    <div class="product-details">
+                        <h5 class="product-price text-red my-2">AED 40,000</h6>
+                            <h6 class="product-title">Four Number Plate</h6>
+                            <p class="product-type mb-0 small">Abudhabi Number Plate ● Private Car</p>
+                            <p class="small">Location: Abudhabi</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="https://motarey.com/wp-content/uploads/2021/12/listing9-621x396.jpg" alt="image">
+                    </div>
+                    <div class="product-details">
+                        <h5 class="product-price text-red my-2">AED 40,000</h6>
+                            <h6 class="product-title">Four Number Plate</h6>
+                            <p class="product-type mb-0 small">Abudhabi Number Plate ● Private Car</p>
+                            <p class="small">Location: Abudhabi</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="https://motarey.com/wp-content/uploads/2021/12/listing9-621x396.jpg" alt="image">
+                    </div>
+                    <div class="product-details">
+                        <h5 class="product-price text-red my-2">AED 40,000</h6>
+                            <h6 class="product-title">Four Number Plate</h6>
+                            <p class="product-type mb-0 small">Abudhabi Number Plate ● Private Car</p>
+                            <p class="small">Location: Abudhabi</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="https://motarey.com/wp-content/uploads/2021/12/listing9-621x396.jpg" alt="image">
+                    </div>
+                    <div class="product-details">
+                        <h5 class="product-price text-red my-2">AED 40,000</h6>
+                            <h6 class="product-title">Four Number Plate</h6>
+                            <p class="product-type mb-0 small">Abudhabi Number Plate ● Private Car</p>
+                            <p class="small">Location: Abudhabi</p>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="https://motarey.com/wp-content/uploads/2021/12/listing9-621x396.jpg" alt="image">
+                    </div>
+                    <div class="product-details">
+                        <h5 class="product-price text-red my-2">AED 40,000</h6>
+                            <h6 class="product-title">Four Number Plate</h6>
+                            <p class="product-type mb-0 small">Abudhabi Number Plate ● Private Car</p>
+                            <p class="small">Location: Abudhabi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Listing End -->
+
+
+    <!-- Testimonials Start -->
+    <section>
+        <div class="wrapper pb-5">
+            <div class="row">
+                <h3 class="mb-4">Testimonials</h3>
+            </div>
+            <div class="row testimonials-row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="testimonial-box">
+                        <div class="testimonial-quate-box">
+                            <p class="mb-0"><i class="fa fa-quote-left"></i>I've been using dubizzle now for 10 years,
+                                I've literally lost count of the
+                                number cars I've bought and sold from it. Its become so addictive, I tend to log-on most
+                                days - planning the next car is both fast &amp; fun. <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <div class="testimonial-img d-flex align-items-center gap-2 mt-4">
+                            <img src="https://dbzstatic-a.akamaihd.net/dist_9c46920/images/vertical_homepages/testimonials/motors/Sean.png"
+                                alt="image">
+                            <span>Sean Cain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="testimonial-box">
+                        <div class="testimonial-quate-box">
+                            <p class="mb-0"><i class="fa fa-quote-left"></i>I've been using dubizzle now for 10 years,
+                                I've literally lost count of the
+                                number cars I've bought and sold from it. Its become so addictive, I tend to log-on most
+                                days - planning the next car is both fast &amp; fun. <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <div class="testimonial-img d-flex align-items-center gap-2 mt-4">
+                            <img src="https://dbzstatic-a.akamaihd.net/dist_9c46920/images/vertical_homepages/testimonials/motors/Sean.png"
+                                alt="image">
+                            <span>Sean Cain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="testimonial-box">
+                        <div class="testimonial-quate-box">
+                            <p class="mb-0"><i class="fa fa-quote-left"></i>I've been using dubizzle now for 10 years,
+                                I've literally lost count of the
+                                number cars I've bought and sold from it. Its become so addictive, I tend to log-on most
+                                days - planning the next car is both fast &amp; fun. <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <div class="testimonial-img d-flex align-items-center gap-2 mt-4">
+                            <img src="https://dbzstatic-a.akamaihd.net/dist_9c46920/images/vertical_homepages/testimonials/motors/Sean.png"
+                                alt="image">
+                            <span>Sean Cain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-section">
+        <div class="wrapper">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img
+                                        src="https://motarey.com/wp-content/uploads/2023/08/mobile-logo.png"
+                                        class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-2 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul class="p-0">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul class="p-0">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a
+                                    href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul class="mb-0">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Custom Js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
