@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -11,7 +12,7 @@
 }
 
 .w-mxc {
-    width: max-content;
+    width: max-content !important;
 }
 
 .logo img {
@@ -235,6 +236,153 @@ input:focus {
     font-style: italic;
 }
 
+.privacy_text {
+    font-size: small;
+    text-align: center;
+    color: rgb(190, 192, 193);
+}
+
+.privacy_text a {
+    text-decoration: none;
+}
+
+.login-buttons a {
+    border: 1px solid rgb(98, 100, 101);
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    color: rgb(98, 100, 101);
+}
+
+.login-buttons img {
+    width: 25px;
+}
+
+@media(min-width:991px){
+    .modal-body{
+        padding: 3rem;
+    }
+}
+.category-item a{
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border-bottom:1px solid #eef0f1;
+    position: relative;
+}
+.category-item a::after{
+    content: "";
+    background-image: url('https://dbzstatic-a.akamaihd.net/images/paa/category-selection/right-chevron.png');
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    padding: 16px 32px 16px 8px;
+    position: absolute;
+    right: 0;
+}
+.plate-form input{
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b6b8b9;
+}
+.plate-form input::placeholder{
+    color: #b6b8b9;
+}
+.plate-form input:focus{
+    outline: 0;
+}
+.plate-form select{
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b6b8b9;
+}
+.plate-form select::placeholder{
+    color: #b6b8b9;
+}
+.plate-form select:focus{
+    outline: 0;
+}
+.plate-form textarea{
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b6b8b9;
+}
+.plate-form textarea::placeholder{
+    color: #b6b8b9;
+}
+.plate-form textarea:focus{
+    outline: 0;
+}
+.select-design{
+    border: 1px solid #b6b8b9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.select-design div:first-child{
+    border-right: 1px solid #b6b8b9;
+}
+.select-design div{
+    padding:13px 13px;
+    /* padding-left: ; */
+}
+.select-design input {
+    accent-color: red;
+    transform: scale(1.4);
+}
+.number-plate-box{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #b6b8b9;
+    background-color: #FAFAFA;
+    padding:0px  12%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #424648;
+}
+#PlateCode{
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 15%;
+    color: #FFF;
+    left: 47%;
+}
+#PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 39%;
+    left: 37%;
+}
+.cursor{
+    cursor: pointer;
+}
+.btn-next{
+    padding: 13px !important;
+    font-size: 16px;
+}
+.plate-wrapper{
+    width: 400px;
+}
+
+
 
 
 
@@ -428,6 +576,9 @@ input:focus {
 }
 
 @media(max-width:991px) {
+    .modal-body{
+        padding: 2rem;
+    }
     .mobile-menu {
         display: block;
     }
@@ -437,10 +588,12 @@ input:focus {
         display: block;
         margin: auto;
     }
+
     .product-listing {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
     .testimonials-row .col-lg-4 {
         margin-bottom: 20px;
     }
@@ -450,13 +603,18 @@ input:focus {
 
 @media(max-width:768px) {
 
+    .offcanvas {
+        max-width: 70%;
+    }
 
     .product-listing {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    
+    .focus-none:focus {
+        box-shadow: none;
+    }
 
     .card-box i {
         font-size: 20px;
@@ -488,5 +646,8 @@ input:focus {
 
     .cards-row {
         gap: 0px 0px !important;
+    }
+    #PlateNumber{
+        left: 36%;
     }
 }
