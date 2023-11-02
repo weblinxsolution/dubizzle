@@ -265,22 +265,24 @@ input:focus {
     width: 25px;
 }
 
-@media(min-width:991px){
-    .modal-body{
+@media(min-width:991px) {
+    .modal-body {
         padding: 3rem;
     }
 }
-.category-item a{
+
+.category-item a {
     display: block;
     width: 100%;
     padding: 15px 0px;
     text-decoration: none;
     color: #000;
     font-weight: 600;
-    border-bottom:1px solid #eef0f1;
+    border-bottom: 1px solid #eef0f1;
     position: relative;
 }
-.category-item a::after{
+
+.category-item a::after {
     content: "";
     background-image: url('https://dbzstatic-a.akamaihd.net/images/paa/category-selection/right-chevron.png');
     background-position: right 8px center;
@@ -290,73 +292,88 @@ input:focus {
     position: absolute;
     right: 0;
 }
-.plate-form input{
+
+.plate-form input {
     width: 100%;
     padding: 13px;
     border-radius: 8px;
     margin-bottom: 10px;
     border: 1px solid #b6b8b9;
 }
-.plate-form input::placeholder{
+
+.plate-form input::placeholder {
     color: #b6b8b9;
 }
-.plate-form input:focus{
+
+.plate-form input:focus {
     outline: 0;
 }
-.plate-form select{
+
+.plate-form select {
     width: 100%;
     padding: 13px;
     border-radius: 8px;
     margin-bottom: 10px;
     border: 1px solid #b6b8b9;
 }
-.plate-form select::placeholder{
+
+.plate-form select::placeholder {
     color: #b6b8b9;
 }
-.plate-form select:focus{
+
+.plate-form select:focus {
     outline: 0;
 }
-.plate-form textarea{
+
+.plate-form textarea {
     width: 100%;
     padding: 13px;
     border-radius: 8px;
     margin-bottom: 10px;
     border: 1px solid #b6b8b9;
 }
-.plate-form textarea::placeholder{
+
+.plate-form textarea::placeholder {
     color: #b6b8b9;
 }
-.plate-form textarea:focus{
+
+.plate-form textarea:focus {
     outline: 0;
 }
-.select-design{
+
+.select-design {
     border: 1px solid #b6b8b9;
     border-radius: 8px;
     margin-bottom: 10px;
 }
-.select-design div:first-child{
+
+.select-design div:first-child {
     border-right: 1px solid #b6b8b9;
 }
-.select-design div{
-    padding:13px 13px;
+
+.select-design div {
+    padding: 13px 13px;
     /* padding-left: ; */
 }
+
 .select-design input {
     accent-color: red;
     transform: scale(1.4);
 }
-.number-plate-box{
+
+.number-plate-box {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
     border: 1px solid #b6b8b9;
     background-color: #FAFAFA;
-    padding:0px  12%;
+    padding: 0px 12%;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     color: #424648;
 }
-#PlateCode{
+
+#PlateCode {
     font-size: 27px;
     font-family: 'Oswald', sans-serif;
     position: absolute;
@@ -364,6 +381,7 @@ input:focus {
     color: #FFF;
     left: 47%;
 }
+
 #PlateNumber {
     font-size: 40px;
     font-family: 'Oswald', sans-serif;
@@ -371,21 +389,91 @@ input:focus {
     top: 39%;
     left: 37%;
 }
-.cursor{
+
+.cursor {
     cursor: pointer;
 }
-.btn-next{
+
+.btn-next {
     padding: 13px !important;
     font-size: 16px;
 }
-.plate-wrapper{
+
+.plate-wrapper {
     width: 400px;
 }
 
+.filter_label {
+    font-size: small;
+    font-weight: 700;
+}
 
+.product-listing-filter {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 15px;
+    border-radius: 10px;
+}
 
+.product-listing-filter input {
+    border: 1px solid lightgrey;
+    font-size: 15px;
+}
 
+.product-listing-filter select {
+    border: 1px solid lightgrey;
+    font-size: 15px;
+}
 
+.text-grey {
+    color: #7e7d7d;
+}
+
+.filter_count a:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.pro_badge {
+    padding: 5px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(94.47deg, rgb(103, 167, 242) 2.35%, rgb(37, 128, 235) 95.78%);
+    width: max-content;
+}
+
+.productImg {
+    background-color: #FAFAFA;
+}
+
+.wish_list {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wish_list div {
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.wish_list div:hover {
+    background-color: #686868;
+}
 
 .footer-section {
     background: #151414;
@@ -576,9 +664,10 @@ input:focus {
 }
 
 @media(max-width:991px) {
-    .modal-body{
+    .modal-body {
         padding: 2rem;
     }
+
     .mobile-menu {
         display: block;
     }
@@ -602,7 +691,9 @@ input:focus {
 }
 
 @media(max-width:768px) {
-
+    .product-listing-filter .col{
+        flex: auto;
+    }
     .offcanvas {
         max-width: 70%;
     }
@@ -647,7 +738,8 @@ input:focus {
     .cards-row {
         gap: 0px 0px !important;
     }
-    #PlateNumber{
+
+    #PlateNumber {
         left: 36%;
     }
 }
