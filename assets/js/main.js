@@ -31,3 +31,11 @@ $('.number_plate').change(function () {
 
     }
 });
+
+$(window).scroll(function(){    
+    if($(this).scrollTop() > 300){
+        $('.product-details-scroll').addClass('product-sticky');
+    }else{
+        $('.product-details-scroll').removeClass('product-sticky');
+    }
+});
