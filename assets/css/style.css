@@ -373,7 +373,8 @@ input:focus {
     color: #424648;
 }
 
-#PlateCode {
+/* Abudhabi */
+.abudhabi #PlateCode {
     font-size: 27px;
     font-family: 'Oswald', sans-serif;
     position: absolute;
@@ -382,13 +383,43 @@ input:focus {
     left: 47%;
 }
 
-#PlateNumber {
+.abudhabi #PlateNumber {
     font-size: 40px;
     font-family: 'Oswald', sans-serif;
     position: absolute;
     top: 39%;
     left: 37%;
 }
+/* Dubai */
+/* Private */
+.dubai-private #PlateCode {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 19%;
+    color: #424648;
+    left: 30%;
+}
+
+.dubai-private #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 19%;
+    left: 37%;
+}
+
+/* Classic */
+
+.dubai-classic #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 37%;
+    left: 36.5%;
+    color: #FFF;
+}
+
 
 .cursor {
     cursor: pointer;
@@ -535,18 +566,20 @@ input:focus {
 .slick-dots {
     display: none !important;
 }
+
 .product-contact-buttons {
     display: flex;
     align-items: center;
     position: fixed;
     left: 0;
-    bottom:65px;
+    bottom: 65px;
     z-index: 100;
     background-color: #FFF;
     width: 100%;
     gap: 15px;
     padding: 13px;
 }
+
 .product-contact-buttons button {
     padding: 10px 16px;
     font-size: 16px;
@@ -566,7 +599,8 @@ input:focus {
     align-items: center;
     flex: 1 1 0%;
 }
-.product-details-scroll{
+
+.product-details-scroll {
     background-color: #FFF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 4px;
@@ -584,36 +618,132 @@ input:focus {
     visibility: hidden;
     opacity: 0;
 }
-.product-sticky{
+
+.product-sticky {
     transform: translateY(0%);
     visibility: visible;
     opacity: 1;
 }
-.x-small{
+
+.x-small {
     font-size: 12px;
 }
-.filter_result_count3 a{
+
+.filter_result_count3 a {
     font-size: 15px;
 }
-.ads-listing-header{
+
+.ads-listing-header {
     line-height: 48px;
     background-color: #f6f7f8;
     padding: 13px;
 }
-.ads-listing-header h6{
+
+.ads-listing-header h6 {
     font-size: 14px;
 }
+
 .check_scale {
     transform: scale(1.8);
 }
-.my_drop::after{
+
+.my_drop::after {
     display: none;
 }
-.dropstart::after{
+
+.dropstart::after {
     display: none;
 }
-.dropstart .dropdown-toggle::before{
+
+.dropstart .dropdown-toggle::before {
     display: none;
+}
+
+.checkout-detail {
+    background-color: #FFF;
+    border: 1px solid rgba(182, 184, 185, .5);
+}
+
+#CheckOutTabs li {
+    width: 50%;
+}
+
+#CheckOutTabs li button {
+    width: 100%;
+}
+
+#CheckOutTabs li button {
+    transition: all .2s;
+    cursor: pointer;
+    background: #FFFF;
+    border: 1px solid lightgrey;
+    padding: 8px 20px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#CheckOutTabs li button.active {
+    background: #e00000;
+    border: 1px solid #e00000;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #f5f5f5;
+}
+
+.featured-box {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.apply-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apply-box input::placeholder {
+    font-size: small;
+}
+
+.apply-box button {
+    padding: 6px;
+    width: 30%;
+    font-weight: 600;
+}
+
+.btn_pay {
+    padding: 12px;
+    font-size: medium;
+}
+
+.pick-a-category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pick-a-category a {
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.pick-a-category h6 {
+    color: #000;
+    margin-top: 20px;
+}
+
+.pick-a-category a img {
+    width: 40px;
 }
 
 
@@ -841,9 +971,10 @@ input:focus {
 }
 
 @media(max-width:768px) {
-    .pr_ads_list{
+    .pr_ads_list {
         flex-wrap: wrap;
     }
+
     .product-listing-filter .col {
         flex: auto;
     }
@@ -893,10 +1024,15 @@ input:focus {
         gap: 0px 0px !important;
     }
 
-    #PlateNumber {
-        left: 36%;
+    .abudhabi #PlateNumber {
+        left: 37.7%;
     }
-    .user-profile{
+
+    .user-profile {
         width: 100%;
+    }
+
+    .pick-a-category {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

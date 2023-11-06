@@ -9,28 +9,28 @@ $('.plate_number').keyup(function () {
 
 });
 
-$('.number_plate').change(function () {
-    var plate = $(this).val();
-    if (plate == 'new') {
+// $('.number_plate').change(function () {
+//     var plate = $(this).val();
 
-        $('.number-plate-img').attr('src', `assets/images/${'Abu_Dhabi_New.png'}`)
+//     // For Abudhabi
+//     if (plate == 'new') {
+//         $('.number-plate-img').attr('src', `assets/images/${'Abu_Dhabi_New.png'}`)
+//         $('#PlateCode').css({
+//             top: '19%',
+//             left: '28%',
+//             color: '#424648'
+//         });
 
-        $('#PlateCode').css({
-            top: '19%',
-            left: '28%',
-            color: '#424648'
-        });
+//     } else {
+//         $('.number-plate-img').attr('src', `assets/images/${'number-plate.png'}`)
+//         $('#PlateCode').css({
+//             top: '15%',
+//             left: '47%',
+//             color: '#FFF'
+//         });
 
-    } else {
-        $('.number-plate-img').attr('src', `assets/images/${'number-plate.png'}`)
-        $('#PlateCode').css({
-            top: '15%',
-            left: '47%',
-            color: '#FFF'
-        });
-
-    }
-});
+//     }
+// });
 
 $(window).scroll(function(){    
     if($(this).scrollTop() > 300){
