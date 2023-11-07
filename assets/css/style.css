@@ -557,6 +557,15 @@ input:focus {
 }
 
 /* Ajman End */
+/* ras-al-khaimah-private */
+.ras-al-khaimah-private #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 38%;
+    left: 36.5%;
+    color: #424648;
+}
 
 
 .cursor {
