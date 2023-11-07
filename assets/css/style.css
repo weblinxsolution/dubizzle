@@ -31,6 +31,10 @@ input:focus {
     outline: 0;
 }
 
+.hover-none-white:hover {
+    color: #FFF;
+}
+
 .btn-theme {
     transition: all .2s;
     cursor: pointer;
@@ -373,7 +377,8 @@ input:focus {
     color: #424648;
 }
 
-/* Abudhabi */
+/* Abudhabi Start*/
+/* Private */
 .abudhabi #PlateCode {
     font-size: 27px;
     font-family: 'Oswald', sans-serif;
@@ -390,7 +395,28 @@ input:focus {
     top: 39%;
     left: 37%;
 }
-/* Dubai */
+
+/* Motorcycle */
+.abudhabi-motorcycle #PlateCode {
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 15%;
+    color: #424648;
+    left: 47%;
+}
+
+.abudhabi-motorcycle #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+}
+
+/* Abudhabi End */
+
+/* Dubai Start */
 /* Private */
 .dubai-private #PlateCode {
     font-size: 40px;
@@ -420,9 +446,134 @@ input:focus {
     color: #FFF;
 }
 
+/* Motor Cycle */
+.dubai-motorcycle #PlateCode {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 12%;
+    color: #424648;
+    left: 30%;
+}
+
+.dubai-motorcycle #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 41%;
+    left: 44.5%;
+    color: #424648;
+}
+
+/* Dubai End */
+
+/* Sharjah Start */
+
+/* Private */
+.sharjah-private #PlateCode {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 15%;
+    color: #424648;
+    left: 47%;
+}
+
+.sharjah-private #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 29%;
+    left: 36.5%;
+    color: #424648;
+}
+
+/* Classic */
+.sharjah-classic #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 37%;
+    left: 36.5%;
+    color: #FFF;
+}
+
+/* Motor Cycle */
+.sharjah-motorcycle #PlateCode {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 12%;
+    color: #424648;
+    left: 30%;
+}
+
+.sharjah-motorcycle #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 41%;
+    left: 44.5%;
+    color: #424648;
+}
+/* Sharjah End */
+
+/* Ajman Start */
+/* Private */
+.ajman-private #PlateCode {
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 50%;
+    color: #424648;
+    left: 47%;
+}
+
+.ajman-private #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 16%;
+    left: 37%;
+}
+
+/* Motor Cycle */
+.ajman-motorcycle #PlateCode {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 12%;
+    color: #424648;
+    left: 30%;
+}
+
+.ajman-motorcycle #PlateNumber {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 42%;
+    left: 44.5%;
+    color: #424648;
+}
+
+/* Ajman End */
+
 
 .cursor {
     cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
 }
 
 .btn-next {
