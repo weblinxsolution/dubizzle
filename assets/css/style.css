@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-    width: 95%;
+    width: 95%; 
     max-width: 1200px;
     margin: auto;
 }
@@ -16,7 +16,7 @@
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
 }
 
 .cursor {
@@ -191,6 +191,7 @@ input:focus {
 .card-box {
     border: 1px solid #dfdedec9;
     padding: 20px;
+    height: 100%;
 }
 
 .cards-row {
